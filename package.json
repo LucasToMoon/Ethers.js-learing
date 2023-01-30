@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "ethers": "^5.7.2"
-  }
+  },
+  "name": "ether",
+  "version": "1.0.0",
+  "main": "HelloVitalik.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github_lucasj:LucasToMoon/Ethers.js-learing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
 }
