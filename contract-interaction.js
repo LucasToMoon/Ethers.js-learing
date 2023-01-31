@@ -33,5 +33,5 @@ console.log("\n3. Call the transfer() function and transfer 0.001 WETH to vitali
 const tx2 = await contractWETH.transfer("vitalik.eth", ethers.utils.parseEther("0.001"))
 await tx2.wait()
 const balanceWETH_transfer = await contractWETH.balanceOf(address)
-console.log(`WETH positions after deposit: ${ethers.utils.formatEther(balanceWETH_transfer)}\n`)
+console.log(`WETH positions after transfer: ${ethers.utils.formatEther(balanceWETH_transfer)}\n`)
 
