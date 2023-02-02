@@ -19,3 +19,8 @@ console.log(`Print event details:`);
 const transferEvents = await contract.queryFilter('Transfer', block - 10, block)
 // Print the first transfer event
 console.log(transferEvents[0])
+
+// Formatting data from Transfer events (variables are in args)
+console.log("\n2. Formatting events.")
+const amount = ethers.utils.formatUnits(ethers.BigNumber.from(transferEvents[0].args["amount"]), "ether");
+console.log(`address ${transferEvents[0].args["from"]} transfer${amount} WETH to address ${transferEvents[0].args["to"]}`)
